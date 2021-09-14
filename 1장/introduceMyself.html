@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 페이지의 구성 요소</title>
+
+  <style>
+    body {
+      background-color: linen; 
+      color : green; 
+      margin-left : 40px; 
+      margin-right : 40px;
+    }
+    
+    h3 {
+      text-align: center;
+      color : darkred;
+    }
+
+    hr{
+      height: 5px;
+      border : solid grey;
+      background-color: grey;
+    }
+    
+    span {
+      color: blue;
+      font-size:  20px;
+    }
+
+  </style>
+
+  <script>
+    function show(){ //<img>에 이미지 달기 
+      document.getElementById("fig").src = "DSC08763.JPG";  
+    }
+    function hide() { //<img>에 이미지 제거
+      document.getElementById("fig").src = "";
+    }
+
+  </script>
+
+</head>
+<body>
+  <h3 onmouseover="show()" onmouseout="hide()">안녕하세요</h3>
+  <hr>
+  <div> <img id='fig' src='' width = 500px></div>
+  저는 서울시립대학교 <span>전자전기컴퓨터공학부</span>2017440048 <span>박성우</span> 입니다.
+</body>
+</html>
