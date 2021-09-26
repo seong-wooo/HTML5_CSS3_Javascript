@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ldng="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index 프로퍼티</title>
+  <style>
+    div{
+      position: absolute;
+    }
+    img{
+      position: absolute;
+    }
+    #a{
+      z-index : -3;
+      left:10px;
+      top:20px;
+    }
+    #b{
+      z-index : 2;
+      left:40px;
+      top:30px;
+    }
+    #c{
+      z-index : 3;
+      left:80px;
+      top:40px;
+    }
+    #d{
+      z-index : 7;
+      left:120px;
+      top:50px;
+    }
+  </style>
+</head>
+<body>
+  <h3>z-index 프로퍼티</h3>
+  <hr>
+  <div>
+    <img id="a" src="DSC08763.JPG" width="150">
+    <img id="b" src="DSC08763.JPG" width="150">
+    <img id="c" src="DSC08763.JPG" width="150">
+    <img id="d" src="DSC08763.JPG" width="150">
+  </div>
+</body>
+</html>
