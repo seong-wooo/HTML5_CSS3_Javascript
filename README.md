@@ -7,3 +7,4 @@
 - 2021/09/14 - [2장](https://github.com/seong-wooo/HTML5_CSS3_Javascript/tree/main/2%EC%9E%A5) 학습 완료
 - 2021/09/17 - [3장](https://github.com/seong-wooo/HTML5_CSS3_Javascript/tree/main/3%EC%9E%A5) 학습 완료
 - 2021/09/23 - [4장](https://github.com/seong-wooo/HTML5_CSS3_Javascript/tree/main/4%EC%9E%A5) 학습 완료
+- 2021/09/29 - [5장](https://github.com/seong-wooo/HTML5_CSS3_Javascript/tree/main/5%EC%9E%A5) 학습 완료
