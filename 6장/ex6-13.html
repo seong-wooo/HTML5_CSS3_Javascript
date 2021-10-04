@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비트 연산</title>
+  <script>
+    function digit8(v){
+      var str=""
+      for(i=0;i<8;i++, v<<=1){
+        if((v&0x80)) str+="1"         /* 0x80 => 10000000 */
+        else str+="0"
+      }
+      return str;
+    }
+  </script>
+</head>
+<body>
+  <h3>비트 연산</h3>
+  <script>
+    var x=10, y=3,z = -3;
+    document.write("digit(x) " +  digit8(x) +"<br>");
+    document.write("digit(y) " +  digit8(y)+"<br>");
+    document.write(digit8(x|y)+"<br>");
+    document.write(digit8(x&y)+"<br>");
+    document.write(digit8(x^y)+"<br>");
+    document.write(digit8(~x)+"<br>");
+    document.write(digit8(x>>>1)+"<br>");
+    document.write(digit8(z)+"<br>");
+    document.write(digit8(z>>>1)+"<br>");
+
+    document.write(z>>>1+"<br>"); // 음수 -> 양수로 바뀜
+  </script>
+</body>
+</html>
