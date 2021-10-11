@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>리터럴 표기법으로 만들기</title>
+  <script>
+    var account ={
+      owner :"박성우",
+      code : "213",
+      balance : 3500000,
+
+      inquiry : function (){
+      return this.balance;
+    },
+      deposit: function(money){
+        this.balance += money
+      },
+      withdraw : function(money) {
+      this.balance -= money; 
+      }
+    };
+  </script>
+</head>
+<body>
+  <script>
+    document.write("account : ");
+    document.write("<br>")
+    document.write(account.owner);
+    document.write("<br>")
+    document.write(account.code);
+    document.write("<br>")
+    document.write(account.balance);
+    document.write("<br>")
+    document.write(account.inquiry());
+    document.write("<br>");
+  
+    account.deposit(10000);
+    document.write(account.inquiry())
+    document.write("<br>")
+    account.withdraw(5000);
+    document.write(account.inquiry())
+    document.write("<br>")
+  
+  </script>
+</body>
+</html>

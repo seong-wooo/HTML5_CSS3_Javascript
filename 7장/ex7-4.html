@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array 객체의 메소드 활용</title>
+  <script>
+    function pr(msg, arr){
+      document.write(msg + arr.toString() + "<br>")
+
+    }
+  </script>
+</head>
+<body>
+  <h3>Array객체의 메소드 활용</h3> 
+  <hr>
+  <script>
+    var a =new Array("황", "김", "이");
+    var b = new Array("박","최");
+    var c;
+
+    pr("배열 a= ", a);
+    pr("배열 a= ", b);
+    document.write("<br>");
+
+    c= a.concat(b);
+    pr("a.concat(b) " , c );
+    pr("a= ", a);
+
+    c= a.join(b);
+    pr("a.join(b) " , c );
+    pr("a= ", a);
+
+    
+    c= a.reverse();
+    pr("a.reverse() " , c );
+    pr("a= ", a);
+
+    
+    c= a.slice(1,2);
+    pr("a.slice(1,2) " , c );
+    pr("a= ", a);
+
+    
+    c= a.sort();
+    pr("a.sort() " , c );
+    pr("a= ", a);
+
+    
+    c= a.toString();
+    document.write("a.toString() : " + c)
+  </script> 
+</body>
+</html>
