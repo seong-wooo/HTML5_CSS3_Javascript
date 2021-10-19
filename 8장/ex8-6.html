@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document.getElementBytagName()</title>
+  <script>
+    function change(){
+
+      var spanArray = document.getElementsByTagName("span");
+      for(var i=0; i<spanArray.length; i++){
+        var span =spanArray[i]
+        span.style.color="orchid";
+        span.style.fontSize ="20px";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h3>내가 좋아하는 과일 <button onclick="change()">누르세요</button></h3>
+</body>
+빨간<span>사과</span> 운동 중간에 <span>바나나</span> 달콤한 <span>체리</span> 자두색 <span>자두</span>
+</html>
